@@ -21,7 +21,7 @@ function generateRandomNumber() {
     }
   }
 
-  return digits.join('');
+  return parseInt(digits.join(''), 10);
 }
 
 module.exports = {
