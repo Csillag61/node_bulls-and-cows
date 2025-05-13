@@ -24,4 +24,6 @@ function generateRandomNumber() {
   return digits.join('');
 }
 
-export { generateRandomNumber };
+module.exports = {
+  generateRandomNumber,
+};
