@@ -14,6 +14,23 @@
  */
 function getBullsAndCows(userInput, numberToGuess) {
   /* Write your code here */
+  let bulls = 0;
+  let cows = 0;
+
+  // eslint-disable-next-line
+  userInput = userInput.toString();
+  // eslint-disable-next-line no-param-reassign
+  numberToGuess = numberToGuess.toString();
+
+  for (let i = 0; i < 4; i++) {
+    if (userInput[i] === numberToGuess[i]) {
+      bulls++;
+    } else if (numberToGuess.includes(userInput[i])) {
+      cows++;
+    }
+  }
+
+  return { bulls, cows };
 }
 
 module.exports = {
