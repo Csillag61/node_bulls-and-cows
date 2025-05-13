@@ -7,7 +7,7 @@
  * @return {number} A random 4-digit number
  */
 
-export function generateRandomNumber() {
+function generateRandomNumber() {
   /* Write your code here */
   const digits = [];
 
@@ -23,3 +23,5 @@ export function generateRandomNumber() {
 
   return digits.join('');
 }
+
+export { generateRandomNumber };
